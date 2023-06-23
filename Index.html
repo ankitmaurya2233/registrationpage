@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form">
+        <div class="logo">
+            <img src="A.png" alt="">
+
+        </div>
+        <div class="reg"   >
+            <form action="#" onsubmit="onsignup(event)">
+                <div class="header">
+                <h1>Book a call</h1>
+                <p>Book a call slot and our representative will call you within 1 hour of selected time</p>
+                <hr>
+                </div>
+                <div class="input">
+                <label >Name:</label><br>
+                <input type="text" name="name" required><br>
+                <label >Email</label><br>
+                <input type="email" name="email" required><br>
+                <label >Phone</label><br>
+                <input type="number" name="phone" id="" required>
+                <div id="time">
+                    <label >Time For Call:</label><br>
+                    <div class="date">
+                    
+                    <input type="date">
+                    <input type="time">
+                    </div>
+                </div>
+                <input type="submit" id="submit" value="GET A CALL"  >
+                </div>
+            </form>
+            
+
+        </div>
+        <div class="last">
+        <button class="btn">Sedule a call</button>
+        <button class="btn">Hire with us</button>
+        </div>
+
+    </div>
+    <script>
+        function onsignup(event){
+            event.preventDefault();
+            console.log(event.target.value);
+            
+        }
+    </script>
+</body>
+</html>
